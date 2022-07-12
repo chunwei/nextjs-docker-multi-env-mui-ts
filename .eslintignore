@@ -1,0 +1,13 @@
+/node_modules
+/static/resource
+/static/_dist
+/static/orders
+/server/_dist
+/utils/types
+/_temp
+/assets/public/hooks/bak-*
+/assets/public/icons
+/assets/components/Icons
+/assets/containers/Icons/index.tsx
+/utils/react-simple-img
+../element-js-sdk

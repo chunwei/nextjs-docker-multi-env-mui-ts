@@ -1,0 +1,113 @@
+.flowContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  transition: all 0.2s;
+  transform: scale(1);
+  transform-origin: 0 0;
+}
+.flowItem {
+  flex: 1 1 240px;
+  height: 336px;
+  border: solid 1px lightblue;
+  border-radius: 12px;
+  margin: 8px;
+}
+.flowItemHidden{
+    height: 1px;
+    flex: 1 1 240px;
+    margin: 0 8px;
+    border: solid 1px red;
+}
+.flowItemCover {
+  width: 100%;
+  height: 240px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.flowItemCover img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px 12px 0 0;
+}
+.flowItemContent {
+  padding: 8px;
+}
+.flowItemContent .flowItemTitle {
+  font-size: 20px;
+  font-weight: bold;
+}
+.flowItemContent .flowItemDesc {
+  font-size: 14px;
+  color: #666;
+}
+
+.cartContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  transition: all 0.2s;
+  transform: translateX(200px);
+}
+.cartItem {
+  width: 100%;
+  height: auto;
+  padding: 8px;
+  margin-top: 8px;
+  border: solid 1px lightgray;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 120rem) {
+  .gridContainer {
+    grid-template-columns: repeat(8, minmax(0px, 1fr));
+  }
+}
+@media screen and (min-width: 100rem) {
+  .gridContainer {
+    grid-template-columns: repeat(6, minmax(0px, 1fr));
+  }
+}
+@media screen and (min-width: 90rem) {
+  .gridContainer {
+    grid-template-columns: repeat(5, minmax(0px, 1fr));
+  }
+}
+
+@media screen and (min-width: 75rem) {
+  .gridContainer {
+    grid-template-columns: repeat(4, minmax(0px, 1fr));
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  .gridContainer {
+    grid-template-columns: repeat(3, minmax(0px, 1fr));
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .gridContainer {
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+  }
+}
+@media screen and (min-width: 30rem) {
+  .gridContainer {
+    grid-row-gap: var(--lr-space-4);
+    grid-column-gap: var(--lr-space-4);
+  }
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0px, 1fr));
+  justify-items: center;
+  grid-row-gap: var(--lr-space-3);
+  grid-column-gap: var(--lr-space-3);
+}

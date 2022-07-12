@@ -1,0 +1,5 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/admin/projects/nextjs-docker-multi-env'
+docker compose -f docker/development/docker-compose.yml build
+make: Leaving directory `/Users/admin/projects/nextjs-docker-multi-env'
+ 

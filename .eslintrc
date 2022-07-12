@@ -1,0 +1,122 @@
+{
+  "env": {
+    "browser": true,
+    "es2020": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "plugin:react/recommended",
+    "plugin:unicorn/recommended",
+    "plugin:promise/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 11,
+    "sourceType": "module"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".tsx", ".ts", ".js", ".jsx", ".json"]
+      },
+      "typescript": {}
+    }
+  },
+  "plugins": ["react", "unicorn", "promise", "@typescript-eslint"],
+  "rules": {
+    "prefer-destructuring": "off",
+    "prefer-rest-params": "off",
+
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/interactive-supports-focus": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+
+    "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx", ".js", ".jsx"] }],
+    "react/destructuring-assignment": "off",
+    "react/no-danger": "off",
+    "react/require-default-props": "off",
+    "react/prop-types": "off",
+    "react/no-children-prop": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/prefer-stateless-function": [0],
+    "react/display-name": [0],
+    "react/forbid-prop-types": [0],
+    "react/static-property-placement": "off",
+    "react/state-in-constructor": "off",
+    "react/default-props-match-prop-types": "off",
+
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-namespace": "off",
+    "@typescript-eslint/no-shadow": "off",
+    "@typescript-eslint/no-this-alias": "off",
+
+    "no-use-before-define": "off",
+    "no-plusplus": "off",
+    "no-restricted-globals": "off",
+    "no-restricted-syntax": "off",
+    "no-console": "off",
+    "no-lonely-if": "off",
+    "no-param-reassign": "off",
+    "no-underscore-dangle": "off",
+    "no-shadow": "off",
+    "no-self-compare": "off",
+
+    "unicorn/prefer-node-protocol": "off",
+    "unicorn/prefer-module": "off",
+    "unicorn/no-this-assignment": "off",
+    "unicorn/no-null": "off",
+    "unicorn/no-useless-undefined": "off",
+    "unicorn/no-array-for-each": "off",
+    "unicorn/no-array-callback-reference": "off",
+    "unicorn/prevent-abbreviations": "off",
+    "unicorn/prefer-spread": "off",
+    "unicorn/no-abusive-eslint-disable": "off",
+    "unicorn/no-object-as-default-parameter": "off",
+    "unicorn/no-array-reduce": "off",
+    "unicorn/filename-case": "off",
+    "unicorn/prefer-export-from": "off",
+    "unicorn/import-style": [
+      "error",
+      {
+        "styles": {
+          "util": false,
+          "path": {
+            "named": true
+          }
+        }
+      }
+    ],
+    "import/no-extraneous-dependencies": ["error", { "packageDir": "./" }],
+    "import/prefer-default-export": "off",
+    "import/extensions": [
+      "error",
+      "never",
+      {
+        "ignorePackages": true,
+        "pattern": {
+          "json": "always"
+        }
+      }
+    ],
+
+    "class-methods-use-this": "off",
+    "guard-for-in": "off",
+    "consistent-return": "off",
+    "func-names": "off",
+    "global-require": "off",
+    "semi": ["error", "never"],
+    "comma-dangle": ["error", "never"],
+    "max-classes-per-file": "off"
+  }
+}
